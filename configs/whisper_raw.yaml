@@ -1,0 +1,13 @@
+model_path: pretrained/whisper-small
+manifest: data/manifests/test.jsonl
+output: outputs/baseline/whisper_raw_test_predictions.jsonl
+error_output: outputs/baseline/whisper_raw_errors.jsonl
+language: zh
+task: transcribe
+max_new_tokens: 64
+num_beams: 1
+do_sample: false
+fp16: true
+resume: true
+limit: null
+batch_size: 1

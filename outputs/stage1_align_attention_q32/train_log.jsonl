@@ -1,0 +1,73 @@
+{"type": "train", "step": 20, "epoch": 1, "loss": 1.8555095683783294, "lr": 2.5e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 29.93}
+{"type": "train", "step": 40, "epoch": 1, "loss": 1.2644653517752886, "lr": 5e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 58.92}
+{"type": "train", "step": 60, "epoch": 1, "loss": 1.1561535710468889, "lr": 7.500000000000001e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 87.63}
+{"type": "train", "step": 80, "epoch": 1, "loss": 1.1989366788417102, "lr": 0.0001, "cuda_memory_mb": 4472.61, "elapsed_sec": 116.02}
+{"type": "train", "step": 100, "epoch": 1, "loss": 1.1961636822670698, "lr": 9.822222222222223e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 144.04}
+{"type": "eval", "step": 100, "valid_loss": 1.165525668884214}
+{"type": "train", "step": 120, "epoch": 1, "loss": 1.1404403097927571, "lr": 9.644444444444445e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 214.6}
+{"type": "train", "step": 140, "epoch": 1, "loss": 1.185053051263094, "lr": 9.466666666666667e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 242.88}
+{"type": "train", "step": 160, "epoch": 1, "loss": 1.1132114831358195, "lr": 9.28888888888889e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 271.21}
+{"type": "train", "step": 180, "epoch": 1, "loss": 1.1129283720627428, "lr": 9.111111111111112e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 299.35}
+{"type": "train", "step": 200, "epoch": 1, "loss": 1.1049038462340832, "lr": 8.933333333333334e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 328.08}
+{"type": "eval", "step": 200, "valid_loss": 1.112473318067329}
+{"type": "train", "step": 220, "epoch": 1, "loss": 1.0683265544474125, "lr": 8.755555555555556e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 399.64}
+{"type": "train", "step": 240, "epoch": 1, "loss": 1.1383609618991612, "lr": 8.577777777777777e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 428.52}
+{"type": "train", "step": 260, "epoch": 1, "loss": 1.1478858303278685, "lr": 8.4e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 457.05}
+{"type": "train", "step": 280, "epoch": 1, "loss": 1.1076128166168928, "lr": 8.222222222222222e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 485.53}
+{"type": "train", "step": 300, "epoch": 1, "loss": 1.076455669850111, "lr": 8.044444444444444e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 513.82}
+{"type": "eval", "step": 300, "valid_loss": 1.0604685287752587}
+{"type": "train", "step": 320, "epoch": 2, "loss": 1.0131018916144967, "lr": 7.866666666666666e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 583.58}
+{"type": "train", "step": 340, "epoch": 2, "loss": 1.0334095899015665, "lr": 7.688888888888889e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 611.88}
+{"type": "train", "step": 360, "epoch": 2, "loss": 1.0502103388309478, "lr": 7.511111111111111e-05, "cuda_memory_mb": 4472.61, "elapsed_sec": 640.23}
+{"type": "train", "step": 380, "epoch": 2, "loss": 1.0296314220875502, "lr": 7.333333333333333e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 668.57}
+{"type": "train", "step": 400, "epoch": 2, "loss": 1.0054129553958773, "lr": 7.155555555555555e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 696.77}
+{"type": "eval", "step": 400, "valid_loss": 1.0274771892801855}
+{"type": "train", "step": 420, "epoch": 2, "loss": 0.9731660567224025, "lr": 6.977777777777779e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 768.81}
+{"type": "train", "step": 440, "epoch": 2, "loss": 1.0002517640590667, "lr": 6.800000000000001e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 796.98}
+{"type": "train", "step": 460, "epoch": 2, "loss": 1.0496311396360398, "lr": 6.622222222222224e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 825.3}
+{"type": "train", "step": 480, "epoch": 2, "loss": 1.0526991732418538, "lr": 6.444444444444446e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 853.45}
+{"type": "train", "step": 500, "epoch": 2, "loss": 0.9803852098062634, "lr": 6.266666666666667e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 881.79}
+{"type": "eval", "step": 500, "valid_loss": 0.9672232654208465}
+{"type": "train", "step": 520, "epoch": 2, "loss": 0.9743420105427504, "lr": 6.08888888888889e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 952.77}
+{"type": "train", "step": 540, "epoch": 2, "loss": 0.8993332309648394, "lr": 5.911111111111112e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 980.87}
+{"type": "train", "step": 560, "epoch": 2, "loss": 0.9361653411760926, "lr": 5.7333333333333336e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1009.06}
+{"type": "train", "step": 580, "epoch": 2, "loss": 0.9753074800595641, "lr": 5.555555555555556e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1037.88}
+{"type": "train", "step": 600, "epoch": 2, "loss": 0.9020792931318283, "lr": 5.377777777777778e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1067.51}
+{"type": "eval", "step": 600, "valid_loss": 0.887516587292505}
+{"type": "train", "step": 620, "epoch": 3, "loss": 0.8450512912124395, "lr": 5.2000000000000004e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1137.38}
+{"type": "train", "step": 640, "epoch": 3, "loss": 0.8789104025810957, "lr": 5.0222222222222226e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1165.64}
+{"type": "train", "step": 660, "epoch": 3, "loss": 0.8382009552791715, "lr": 4.844444444444445e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1194.34}
+{"type": "train", "step": 680, "epoch": 3, "loss": 0.8622333103790879, "lr": 4.666666666666667e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1222.49}
+{"type": "train", "step": 700, "epoch": 3, "loss": 0.8461914412677288, "lr": 4.4888888888888894e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1250.58}
+{"type": "eval", "step": 700, "valid_loss": 0.8054912391416265}
+{"type": "train", "step": 720, "epoch": 3, "loss": 0.8285747973248363, "lr": 4.311111111111111e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1321.91}
+{"type": "train", "step": 740, "epoch": 3, "loss": 0.845809611864388, "lr": 4.133333333333333e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1350.23}
+{"type": "train", "step": 760, "epoch": 3, "loss": 0.80587546415627, "lr": 3.9555555555555556e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1379.4}
+{"type": "train", "step": 780, "epoch": 3, "loss": 0.7599151138216257, "lr": 3.777777777777778e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1407.69}
+{"type": "train", "step": 800, "epoch": 3, "loss": 0.7568976076319813, "lr": 3.6e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1436.18}
+{"type": "eval", "step": 800, "valid_loss": 0.7180188709398523}
+{"type": "train", "step": 820, "epoch": 3, "loss": 0.7280234228819609, "lr": 3.4222222222222224e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1506.83}
+{"type": "train", "step": 840, "epoch": 3, "loss": 0.7315276604145765, "lr": 3.2444444444444446e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1534.99}
+{"type": "train", "step": 860, "epoch": 3, "loss": 0.6828167835250497, "lr": 3.066666666666667e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1563.47}
+{"type": "train", "step": 880, "epoch": 3, "loss": 0.6791317026130855, "lr": 2.8888888888888888e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1591.57}
+{"type": "train", "step": 900, "epoch": 3, "loss": 0.635662398301065, "lr": 2.7111111111111114e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1619.91}
+{"type": "eval", "step": 900, "valid_loss": 0.5924606338390671}
+{"type": "train", "step": 920, "epoch": 4, "loss": 0.5553529562428594, "lr": 2.5333333333333337e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1690.92}
+{"type": "train", "step": 940, "epoch": 4, "loss": 0.5833781027235091, "lr": 2.3555555555555556e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1719.11}
+{"type": "train", "step": 960, "epoch": 4, "loss": 0.5385902096517384, "lr": 2.177777777777778e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1747.17}
+{"type": "train", "step": 980, "epoch": 4, "loss": 0.5340466276509688, "lr": 2e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1775.41}
+{"type": "train", "step": 1000, "epoch": 4, "loss": 0.5199384194798767, "lr": 1.8222222222222224e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1803.82}
+{"type": "eval", "step": 1000, "valid_loss": 0.4738901869946496}
+{"type": "train", "step": 1020, "epoch": 4, "loss": 0.49108953671529887, "lr": 1.6444444444444447e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1875.33}
+{"type": "train", "step": 1040, "epoch": 4, "loss": 0.4220023634843528, "lr": 1.4666666666666668e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1904.29}
+{"type": "train", "step": 1060, "epoch": 4, "loss": 0.4569104075897485, "lr": 1.2888888888888889e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1932.99}
+{"type": "train", "step": 1080, "epoch": 4, "loss": 0.41811970379203556, "lr": 1.1111111111111112e-05, "cuda_memory_mb": 4472.68, "elapsed_sec": 1961.07}
+{"type": "train", "step": 1100, "epoch": 4, "loss": 0.42826874926686287, "lr": 9.333333333333334e-06, "cuda_memory_mb": 4472.68, "elapsed_sec": 1989.77}
+{"type": "eval", "step": 1100, "valid_loss": 0.37313025789451304}
+{"type": "train", "step": 1120, "epoch": 4, "loss": 0.38360564298927785, "lr": 7.555555555555556e-06, "cuda_memory_mb": 4472.68, "elapsed_sec": 2061.06}
+{"type": "train", "step": 1140, "epoch": 4, "loss": 0.3837202528025955, "lr": 5.777777777777778e-06, "cuda_memory_mb": 4472.68, "elapsed_sec": 2088.71}
+{"type": "train", "step": 1160, "epoch": 4, "loss": 0.39475036021322013, "lr": 4.000000000000001e-06, "cuda_memory_mb": 4472.68, "elapsed_sec": 2116.46}
+{"type": "train", "step": 1180, "epoch": 4, "loss": 0.3776026712730527, "lr": 2.2222222222222225e-06, "cuda_memory_mb": 4472.68, "elapsed_sec": 2144.54}
+{"type": "train", "step": 1200, "epoch": 4, "loss": 0.34872957626357676, "lr": 4.444444444444445e-07, "cuda_memory_mb": 4472.68, "elapsed_sec": 2172.39}
+{"type": "eval", "step": 1200, "valid_loss": 0.31394985329004244}
+{"type": "eval_final", "step": 1208, "valid_loss": 0.31378719069960204}

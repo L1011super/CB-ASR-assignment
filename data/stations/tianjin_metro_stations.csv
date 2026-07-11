@@ -1,0 +1,242 @@
+﻿station_id,name,line_ids,pinyin,pinyin_compact,confusions,is_rare
+TJ001,刘园,1,liu yuan,liuyuan,刘原,0
+TJ002,瑞景新苑,1,rui jing xin yuan,ruijingxinyuan,瑞景新院,0
+TJ003,佳园里,1,jia yuan li,jiayuanli,佳原里,0
+TJ004,本溪路,1,ben xi lu,benxilu,本溪录,0
+TJ005,勤俭道,1,qin jian dao,qinjiandao,勤俭到,0
+TJ006,洪湖里,1,hong hu li,honghuli,,0
+TJ007,西站,1|4|6,xi zhan,xizhan,西栈|希站,0
+TJ008,西北角,1,xi bei jiao,xibeijiao,西被角|希北角,0
+TJ009,西南角,1|2,xi nan jiao,xinanjiao,西难角|希南角,0
+TJ010,二纬路,1,er wei lu,erweilu,二纬录,0
+TJ011,海光寺,1|7,hai guang si,haiguangsi,嗨光寺,0
+TJ012,鞍山道,1,an shan dao,anshandao,鞍山到,0
+TJ013,营口道,1|3,ying kou dao,yingkoudao,迎口道|营口到|盈口道,0
+TJ014,小白楼,1,xiao bai lou,xiaobailou,小白喽,0
+TJ015,下瓦房,1|5,xia wa fang,xiawafang,,0
+TJ016,南楼,1,nan lou,nanlou,南喽|难楼,0
+TJ017,土城,1,tu cheng,tucheng,土成,0
+TJ018,陈塘庄,1,chen tang zhuang,chentangzhuang,陈塘装,0
+TJ019,复兴门,1,fu xing men,fuxingmen,,0
+TJ020,华山里,1,hua shan li,huashanli,,0
+TJ021,财经大学,1|10,cai jing da xue,caijingdaxue,,0
+TJ022,双林,1,shuang lin,shuanglin,,0
+TJ023,李楼,1,li lou,lilou,李喽,0
+TJ024,梨双路北,1,li shuang lu bei,lishuanglubei,梨双录北|梨双路被,0
+TJ025,洪泥河东,1,hong ni he dong,hongnihedong,洪泥和东|洪泥河冬,0
+TJ026,高庄子,1,gao zhuang zi,gaozhuangzi,高装子,0
+TJ027,上郭庄,1,shang guo zhuang,shangguozhuang,上郭装,0
+TJ028,国家会展中心,1,guo jia hui zhan zhong xin,guojiahuizhanzhongxin,国家会战中心|国佳会展中心|国家会展钟心,1
+TJ029,国瑞路,1,guo rui lu,guoruilu,国瑞录,0
+TJ030,东沽路,1,dong gu lu,donggulu,东古路|东谷路|东沽录|冬沽路,1
+TJ031,咸水沽北,1,xian shui gu bei,xianshuigubei,咸水古北|咸水谷北|咸水沽被,1
+TJ032,双桥河,1,shuang qiao he,shuangqiaohe,双乔河|双桥和,0
+TJ033,曹庄,2,cao zhuang,caozhuang,曹装,0
+TJ034,卞兴,2,bian xing,bianxing,便兴|变兴,1
+TJ035,芥园西道,2,jie yuan xi dao,jieyuanxidao,界园西道|介园西道|芥园西到|芥原西道|芥园希道,1
+TJ036,咸阳路,2,xian yang lu,xianyanglu,咸阳录,0
+TJ037,长虹公园,2|6,chang hong gong yuan,changhonggongyuan,长虹公原,0
+TJ038,广开四马路,2,guang kai si ma lu,guangkaisimalu,广开四马录,1
+TJ039,鼓楼,2|7,gu lou,gulou,鼓喽,0
+TJ040,东南角,2|4,dong nan jiao,dongnanjiao,东难角|冬南角,0
+TJ041,建国道意风区,2,jian guo dao yi feng qu,jianguodaoyifengqu,建国到意风区|建国道异风区|建国道意风去,1
+TJ042,天津站,2|3|9,tian jin zhan,tianjinzhan,天津栈|天金站,0
+TJ043,远洋国际中心,2,yuan yang guo ji zhong xin,yuanyangguojizhongxin,远洋国际钟心,1
+TJ044,顺驰桥,2,shun chi qiao,shunchiqiao,顺驰乔,0
+TJ045,靖江路,2|5,jing jiang lu,jingjianglu,靖江录,0
+TJ046,翠阜新村,2,cui fu xin cun,cuifuxincun,翠府新村|翠富新村,1
+TJ047,屿东城,2|10,yu dong cheng,yudongcheng,玉东城|语东城|屿东成|屿冬城,0
+TJ048,登州路,2,deng zhou lu,dengzhoulu,登州录,0
+TJ049,国山路,2,guo shan lu,guoshanlu,国山录,0
+TJ050,空港经济区,2,kong gang jing ji qu,konggangjingjiqu,空港经济去,1
+TJ051,滨海国际机场,2,bin hai guo ji ji chang,binhaiguojijichang,滨海国际机场站|滨海国际机厂|滨嗨国际机场,1
+TJ052,南站,3,nan zhan,nanzhan,南栈|难站,0
+TJ053,杨伍庄,3,yang wu zhuang,yangwuzhuang,杨伍装,0
+TJ054,学府工业区,3,xue fu gong ye qu,xuefugongyequ,学府工业去,1
+TJ055,高新区,3,gao xin qu,gaoxinqu,高新去,1
+TJ056,大学城,3,da xue cheng,daxuecheng,大学成,1
+TJ057,华苑,3,hua yuan,huayuan,华院,0
+TJ058,王顶堤,3,wang ding di,wangdingdi,,1
+TJ059,红旗南路,3|6,hong qi nan lu,hongqinanlu,红旗南录|红旗难路,0
+TJ060,周邓纪念馆,3,zhou deng ji nian guan,zhoudengjinianguan,周邓纪念管,1
+TJ061,天塔,3|7,tian ta,tianta,,0
+TJ062,吴家窑,3|11,wu jia yao,wujiayao,,0
+TJ063,西康路,3,xi kang lu,xikanglu,西康录|希康路,0
+TJ064,和平路,3|4,he ping lu,hepinglu,和平录,0
+TJ065,津湾广场,3,jin wan guang chang,jinwanguangchang,金湾广场,0
+TJ066,金狮桥,3,jin shi qiao,jinshiqiao,金狮乔,0
+TJ067,中山路,3,zhong shan lu,zhongshanlu,中山录|钟山路,0
+TJ068,北站,3|6,bei zhan,beizhan,北栈|被站,0
+TJ069,铁东路,3,tie dong lu,tiedonglu,铁东录|铁冬路,0
+TJ070,张兴庄,3|5,zhang xing zhuang,zhangxingzhuang,张兴装,0
+TJ071,宜兴埠,3,yi xing bu,yixingbu,宜兴部|宜兴布,1
+TJ072,天士力,3,tian shi li,tianshili,天时利|天实力,0
+TJ073,华北集团,3,hua bei ji tuan,huabeijituan,华被集团,0
+TJ074,丰产河,3,feng chan he,fengchanhe,丰产和,0
+TJ075,小淀,3,xiao dian,xiaodian,小店|小垫,1
+TJ076,小街,4,xiao jie,xiaojie,小节,0
+TJ077,郎园,4,lang yuan,langyuan,郎原,0
+TJ078,柴楼,4,chai lou,chailou,柴喽,0
+TJ079,双街,4,shuang jie,shuangjie,双节,0
+TJ080,西赵庄,4,xi zhao zhuang,xizhaozhuang,西赵装|希赵庄,0
+TJ081,延吉道,4,yan ji dao,yanjidao,延吉到,0
+TJ082,北仓,4,bei cang,beicang,被仓,0
+TJ083,果园南道,4,guo yuan nan dao,guoyuannandao,果园南到|果原南道|果园难道,0
+TJ084,南仓,4,nan cang,nancang,难仓,0
+TJ085,天穆,4,tian mu,tianmu,,1
+TJ086,柳滩,4,liu tan,liutan,,0
+TJ087,白庙,4,bai miao,baimiao,,0
+TJ088,北洋桥,4,bei yang qiao,beiyangqiao,北洋乔|被洋桥,0
+TJ089,西沽公园,4,xi gu gong yuan,xigugongyuan,西古公园|西谷公园|西沽公原|希沽公园,1
+TJ090,同城商务区西于庄,4,tong cheng shang wu qu xi yu zhuang,tongchengshangwuquxiyuzhuang,同城商务区西余庄|同城商务区西于装|同成商务区西于庄|同城商务去西于庄|同城商务区希于庄,1
+TJ091,金街,4,jin jie,jinjie,金节,0
+TJ092,徐州道,4,xu zhou dao,xuzhoudao,徐州到,0
+TJ093,六纬路,4,liu wei lu,liuweilu,六纬录,0
+TJ094,成林道,4|5,cheng lin dao,chenglindao,成林到,0
+TJ095,泰昌路,4,tai chang lu,taichanglu,泰昌录,0
+TJ096,万东路,4,wan dong lu,wandonglu,万东录|万冬路,0
+TJ097,沙柳南路,4|10,sha liu nan lu,shaliunanlu,沙柳南录|沙柳难路,0
+TJ098,登州南路,4,deng zhou nan lu,dengzhounanlu,登州南录|登州难路,0
+TJ099,跃进北路,4,yue jin bei lu,yuejinbeilu,跃进北录|跃进被路,0
+TJ100,航双路,4,hang shuang lu,hangshuanglu,航双录|杭双路,0
+TJ101,民航大学,4,min hang da xue,minhangdaxue,民杭大学,1
+TJ102,新兴村,4,xin xing cun,xinxingcun,,0
+TJ103,北辰科技园北,5,bei chen ke ji yuan bei,beichenkejiyuanbei,北辰科技原北|北辰科技园被|被辰科技园北,1
+TJ104,丹河北道,5,dan he bei dao,danhebeidao,丹河北到|丹和北道|丹河被道,0
+TJ105,北辰道,5,bei chen dao,beichendao,北辰到|被辰道,0
+TJ106,职业大学,5,zhi ye da xue,zhiyedaxue,,1
+TJ107,淮河道,5,huai he dao,huaihedao,淮河到|淮和道,1
+TJ108,辽河北道,5,liao he bei dao,liaohebeidao,辽河北到|辽和北道|辽河被道,1
+TJ109,宜兴埠北,5,yi xing bu bei,yixingbubei,宜兴部北|宜兴布北|宜兴埠被,1
+TJ110,志成路,5,zhi cheng lu,zhichenglu,志成录,0
+TJ111,思源路,5,si yuan lu,siyuanlu,思源录,0
+TJ112,建昌道,5,jian chang dao,jianchangdao,建昌到,0
+TJ113,金钟河大街,5|6,jin zhong he da jie,jinzhonghedajie,金钟河大节|金钟和大街,0
+TJ114,月牙河,5,yue ya he,yueyahe,月牙和,0
+TJ115,幸福公园,5,xing fu gong yuan,xingfugongyuan,幸福公原,0
+TJ116,津塘路,5,jin tang lu,jintanglu,津塘录|金塘路,0
+TJ117,直沽,5|9,zhi gu,zhigu,,0
+TJ118,西南楼,5,xi nan lou,xinanlou,西南喽|西难楼|希南楼,0
+TJ119,文化中心,5|6|11,wen hua zhong xin,wenhuazhongxin,文化钟心,0
+TJ120,天津宾馆,5|6,tian jin bin guan,tianjinbinguan,天津宾管|天金宾馆,0
+TJ121,肿瘤医院,5|6|7,zhong liu yi yuan,zhongliuyiyuan,肿流医院|中流医院|肿瘤医愿,0
+TJ122,体育中心,5,ti yu zhong xin,tiyuzhongxin,体育钟心,1
+TJ123,凌宾路,5,ling bin lu,lingbinlu,凌宾录,0
+TJ124,昌凌路,5|10,chang ling lu,changlinglu,昌凌录,0
+TJ125,中医一附院,5,zhong yi yi fu yuan,zhongyiyifuyuan,中医一附愿|中医一府院|钟医一附院,1
+TJ126,李七庄南,5,li qi zhuang nan,liqizhuangnan,李七装南|李七庄难,0
+TJ127,京华东道,5|JJ,jing hua dong dao,jinghuadongdao,京华东到|京华冬道,0
+TJ128,南孙庄,6,nan sun zhuang,nansunzhuang,南孙装|难孙庄,0
+TJ129,南何庄,6,nan he zhuang,nanhezhuang,南何装|难何庄,0
+TJ130,大毕庄,6,da bi zhuang,dabizhuang,大毕装,0
+TJ131,金钟街,6,jin zhong jie,jinzhongjie,金钟节,0
+TJ132,徐庄子,6,xu zhuang zi,xuzhuangzi,徐装子,0
+TJ133,民权门,6,min quan men,minquanmen,,0
+TJ134,北宁公园,6,bei ning gong yuan,beininggongyuan,北宁公原|被宁公园,0
+TJ135,新开河,6,xin kai he,xinkaihe,新开和,0
+TJ136,外院附中,6,wai yuan fu zhong,waiyuanfuzhong,外愿附中|外院府中|外院附钟,1
+TJ137,天泰路,6,tian tai lu,tiantailu,天泰录,0
+TJ138,北竹林,6,bei zhu lin,beizhulin,被竹林,0
+TJ139,复兴路,6,fu xing lu,fuxinglu,复兴录,0
+TJ140,人民医院,6,ren min yi yuan,renminyiyuan,人民医愿,1
+TJ141,宜宾道,6,yi bin dao,yibindao,宜宾到,0
+TJ142,鞍山西道,6,an shan xi dao,anshanxidao,鞍山西到|鞍山希道,0
+TJ143,天拖,6,tian tuo,tiantuo,,0
+TJ144,一中心医院,6,yi zhong xin yi yuan,yizhongxinyiyuan,一中心医愿|一中心一院|一钟心医院,1
+TJ145,迎风道,6,ying feng dao,yingfengdao,迎风到,0
+TJ146,南翠屏,6,nan cui ping,nancuiping,难翠屏,0
+TJ147,水上公园东路,6,shui shang gong yuan dong lu,shuishanggongyuandonglu,水上公园东录|水上公原东路|水上公园冬路,1
+TJ148,乐园道,6,le yuan dao,leyuandao,乐园到|乐原道,0
+TJ149,尖山路,6,jian shan lu,jianshanlu,尖山录,0
+TJ150,医大二院,6|11,yi da er yuan,yidaeryuan,医大二愿|一大二院,0
+TJ151,梅江道,6,mei jiang dao,meijiangdao,梅江到,0
+TJ152,左江道,6,zuo jiang dao,zuojiangdao,左江到,0
+TJ153,梅江公园,6,mei jiang gong yuan,meijianggongyuan,梅江公原,0
+TJ154,梅江会展中心,6,mei jiang hui zhan zhong xin,meijianghuizhanzhongxin,梅江会战中心|美江会展中心|梅江会展钟心,1
+TJ155,解放南路,6,jie fang nan lu,jiefangnanlu,解放南录|解放难路,0
+TJ156,洞庭路,6,dong ting lu,dongtinglu,洞庭录,0
+TJ157,梅林路,6,mei lin lu,meilinlu,梅林录,0
+TJ158,渌水道,6|8,lu shui dao,lushuidao,绿水道|路水道|录水道|澧水道|渌水到,0
+TJ159,赛达路,7,sai da lu,saidalu,赛达录|塞达路,0
+TJ160,芦北路,7,lu bei lu,lubeilu,芦北录|芦被路|卢北路,0
+TJ161,宏源道,7,hong yuan dao,hongyuandao,宏源到|洪源道,0
+TJ162,兴华道,7,xing hua dao,xinghuadao,兴华到,0
+TJ163,张道口,7,zhang dao kou,zhangdaokou,张到口,0
+TJ164,梅江会展中心南,7,mei jiang hui zhan zhong xin nan,meijianghuizhanzhongxinnan,梅江会战中心南|美江会展中心南|梅江会展中心难|梅江会展钟心南,1
+TJ165,王兰庄,7,wang lan zhuang,wanglanzhuang,王兰装,0
+TJ166,丽江道,7|10,li jiang dao,lijiangdao,丽江到,0
+TJ167,南开大学八里台,7|11,nan kai da xue ba li tai,nankaidaxuebalitai,难开大学八里台,0
+TJ168,天津大学六里台,7,tian jin da xue liu li tai,tianjindaxueliulitai,天金大学六里台,1
+TJ169,福安大街,7,fu an da jie,fuandajie,福安大节,0
+TJ170,双港,8,shuang gang,shuanggang,,0
+TJ171,景荷道,8,jing he dao,jinghedao,景河道|景和道|景荷到,0
+TJ172,景荔道,8,jing li dao,jinglidao,景丽道|景利道|景荔到,1
+TJ173,天津大学北洋园校区,8,tian jin da xue bei yang yuan xiao qu,tianjindaxuebeiyangyuanxiaoqu,天津大学北洋原校区|天津大学北洋园小区|天津大学北洋园校去|天金大学北洋园校区|天津大学被洋园校区,1
+TJ174,海河教育园区,8,hai he jiao yu yuan qu,haihejiaoyuyuanqu,海河教育原区|海和教育园区|海河教育园去|嗨河教育园区,1
+TJ175,南开大学津南校区,8,nan kai da xue jin nan xiao qu,nankaidaxuejinnanxiaoqu,南开大学金南校区|南开大学津南小区|南开大学津南校去|难开大学津南校区,1
+TJ176,和慧南路,8,he hui nan lu,hehuinanlu,和惠南路|河慧南路|和慧南录|和慧难路,0
+TJ177,咸水沽西,8,xian shui gu xi,xianshuiguxi,咸水古西|咸水谷西|咸水沽溪|咸水沽希,1
+TJ178,大王庄,9,da wang zhuang,dawangzhuang,大王装,0
+TJ179,十一经路,9,shi yi jing lu,shiyijinglu,十一京路|十一经录,0
+TJ180,东兴路,9,dong xing lu,dongxinglu,东兴录|冬兴路,0
+TJ181,中山门,9,zhong shan men,zhongshanmen,钟山门,0
+TJ182,一号桥,9,yi hao qiao,yihaoqiao,一号乔,0
+TJ183,二号桥,9,er hao qiao,erhaoqiao,二号乔,0
+TJ184,张贵庄,9,zhang gui zhuang,zhangguizhuang,张贵装,0
+TJ185,新立,9,xin li,xinli,,0
+TJ186,东丽开发区,9,dong li kai fa qu,donglikaifaqu,东丽开发去|冬丽开发区,1
+TJ187,小东庄,9,xiao dong zhuang,xiaodongzhuang,小东装|小冬庄,0
+TJ188,军粮城,9,jun liang cheng,junliangcheng,军粮成,0
+TJ189,钢管公司,9,gang guan gong si,gangguangongsi,钢管工司|刚管公司,0
+TJ190,胡家园,9,hu jia yuan,hujiayuan,胡家原|胡家元,0
+TJ191,塘沽,9,tang gu,tanggu,唐沽|塘古|唐古,1
+TJ192,泰达,9,tai da,taida,台达|太达,0
+TJ193,市民广场,9,shi min guang chang,shiminguangchang,,0
+TJ194,太湖路,9,tai hu lu,taihulu,太湖录,0
+TJ195,会展中心,9,hui zhan zhong xin,huizhanzhongxin,会展钟心,1
+TJ196,东海路,9,dong hai lu,donghailu,东海录|冬海路|东嗨路,0
+TJ197,于台,10,yu tai,yutai,鱼台|玉台,0
+TJ198,瑶环路,10,yao huan lu,yaohuanlu,姚环路|瑶环录,1
+TJ199,江湾二支路,10,jiang wan er zhi lu,jiangwanerzhilu,江湾二直路|江湾二支录,1
+TJ200,友谊南路,10,you yi nan lu,youyinanlu,友谊南录|友谊难路,0
+TJ201,南珠桥,10,nan zhu qiao,nanzhuqiao,南珠乔|难珠桥,1
+TJ202,春海路,10,chun hai lu,chunhailu,春海录|春嗨路,0
+TJ203,玛钢厂,10,ma gang chang,magangchang,马钢厂|麻钢厂,1
+TJ204,微山路,10,wei shan lu,weishanlu,微山录,0
+TJ205,柳林路,10,liu lin lu,liulinlu,柳林录,0
+TJ206,环宇道,10|11,huan yu dao,huanyudao,环宇到,0
+TJ207,龙涵道,10,long han dao,longhandao,龙含道|龙涵到,0
+TJ208,金贸产业园,10,jin mao chan ye yuan,jinmaochanyeyuan,金贸产业原,1
+TJ209,方山道,10,fang shan dao,fangshandao,方山到,0
+TJ210,万山道,10,wan shan dao,wanshandao,万山到,0
+TJ211,香山道,10,xiang shan dao,xiangshandao,香山到,0
+TJ212,崂山道,10,lao shan dao,laoshandao,劳山道|老山道|崂山到,1
+TJ213,水上公园西路,11,shui shang gong yuan xi lu,shuishanggongyuanxilu,水上公园西录|水上公原西路|水上公园希路,1
+TJ214,佟楼,11,tong lou,tonglou,同楼|铜楼|佟喽,1
+TJ215,迎宾馆,11,ying bin guan,yingbinguan,迎宾管,1
+TJ216,澧水道,11,li shui dao,lishuidao,礼水道|理水道|李水道|渌水道|澧水到,1
+TJ217,内江路,11,nei jiang lu,neijianglu,内江录,0
+TJ218,陈塘,11,chen tang,chentang,,0
+TJ219,东江道,11,dong jiang dao,dongjiangdao,东江到|冬江道,0
+TJ220,学苑北路,11,xue yuan bei lu,xueyuanbeilu,学苑北录|学院北路|学苑被路,0
+TJ221,海河东路,11,hai he dong lu,haihedonglu,海河东录|海和东路|海河冬路|嗨河东路,0
+TJ222,雪莲南路,11,xue lian nan lu,xueliannanlu,雪莲南录|雪莲难路,0
+TJ223,招远路,11,zhao yuan lu,zhaoyuanlu,招远录,0
+TJ224,东丽文体中心,11,dong li wen ti zhong xin,dongliwentizhongxin,冬丽文体中心|东丽文体钟心,1
+TJ225,驯海路,11,xun hai lu,xunhailu,寻海路|训海路|驯海录|驯嗨路,1
+TJ226,东丽一经路,11,dong li yi jing lu,dongliyijinglu,东丽一经录|冬丽一经路,1
+TJ227,东丽三经路,11,dong li san jing lu,donglisanjinglu,东丽三经录|冬丽三经路,1
+TJ228,东丽六经路,11,dong li liu jing lu,dongliliujinglu,东丽六经录|冬丽六经路,1
+TJ229,寨上,Z4,zhai shang,zhaishang,寨上站|债上,1
+TJ230,汉沽医院,Z4,han gu yi yuan,hanguyiyuan,汉古医院|汉沽医愿,1
+TJ231,中心渔港,Z4,zhong xin yu gang,zhongxinyugang,中心鱼港|中兴渔港|钟心渔港,1
+TJ232,玉砂道,Z4,yu sha dao,yushadao,玉沙道|玉砂到,0
+TJ233,航母公园,Z4,hang mu gong yuan,hangmugongyuan,航母公原|航母公元|杭母公园,1
+TJ234,软件园,Z4,ruan jian yuan,ruanjianyuan,软件原,1
+TJ235,绿创园,Z4,lv chuang yuan,lvchuangyuan,绿创原,0
+TJ236,和顺路,Z4,he shun lu,heshunlu,和顺录,0
+TJ237,中新生态城,Z4,zhong xin sheng tai cheng,zhongxinshengtaicheng,中心生态城|中新生态成|钟新生态城,1
+TJ238,北塘,Z4,bei tang,beitang,被塘,0
+TJ239,精武,JJ,jing wu,jingwu,京武|经武,1
+TJ240,团泊健康城,JJ,tuan bo jian kang cheng,tuanbojiankangcheng,团博健康城|团泊健康成,1
+TJ241,团泊医学园,JJ,tuan bo yi xue yuan,tuanboyixueyuan,团博医学园|团泊医学原,1

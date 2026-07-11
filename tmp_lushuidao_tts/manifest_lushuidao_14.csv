@@ -1,0 +1,15 @@
+utt_id,station_id,target_station,text,split,source,variant,voice,rate,volume,output_wav
+TJ014_tts_train_0001,TJ014,渌水道,我要去渌水道站,train,tts,normal_female_1,zh-CN-XiaoxiaoNeural,+0%,+0%,TJ014_tts_train_0001.wav
+TJ014_tts_train_0002,TJ014,渌水道,我要去渌水道站,train,tts,normal_male_1,zh-CN-YunxiNeural,+0%,+0%,TJ014_tts_train_0002.wav
+TJ014_tts_train_0003,TJ014,渌水道,我要去渌水道站,train,tts,news_male,zh-CN-YunyangNeural,+0%,+0%,TJ014_tts_train_0003.wav
+TJ014_tts_train_0004,TJ014,渌水道,我要去渌水道站,train,tts,clear_female,zh-CN-XiaoyiNeural,+0%,+0%,TJ014_tts_train_0004.wav
+TJ014_tts_train_0005,TJ014,渌水道,我要去渌水道站,train,tts,calm_male,zh-CN-YunjianNeural,+0%,+0%,TJ014_tts_train_0005.wav
+TJ014_tts_train_0006,TJ014,渌水道,我要去渌水道站,train,tts,slightly_slow,zh-CN-XiaoxiaoNeural,-10%,+0%,TJ014_tts_train_0006.wav
+TJ014_tts_train_0007,TJ014,渌水道,我要去渌水道站,train,tts,slightly_fast,zh-CN-YunxiNeural,+10%,+0%,TJ014_tts_train_0007.wav
+TJ014_tts_train_0008,TJ014,渌水道,我要去渌水道站,train,tts,soft_volume,zh-CN-XiaoyiNeural,+0%,-10%,TJ014_tts_train_0008.wav
+TJ014_tts_train_0009,TJ014,渌水道,我要去渌水道站,train,tts,loud_volume,zh-CN-YunyangNeural,+0%,+10%,TJ014_tts_train_0009.wav
+TJ014_tts_train_0010,TJ014,渌水道,我要去渌水道站,train,tts,fast_female,zh-CN-XiaoxiaoNeural,+15%,+0%,TJ014_tts_train_0010.wav
+TJ014_tts_valid_0001,TJ014,渌水道,我要去渌水道站,valid,tts,valid_female,zh-CN-XiaoyiNeural,-5%,+0%,TJ014_tts_valid_0001.wav
+TJ014_tts_valid_0002,TJ014,渌水道,我要去渌水道站,valid,tts,valid_male,zh-CN-YunjianNeural,+5%,+0%,TJ014_tts_valid_0002.wav
+TJ014_tts_test_0001,TJ014,渌水道,我要去渌水道站,test,tts,test_female,zh-CN-XiaoxiaoNeural,-8%,+0%,TJ014_tts_test_0001.wav
+TJ014_tts_test_0002,TJ014,渌水道,我要去渌水道站,test,tts,test_male,zh-CN-YunxiNeural,+8%,+0%,TJ014_tts_test_0002.wav

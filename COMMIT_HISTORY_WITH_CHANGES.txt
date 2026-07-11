@@ -1,0 +1,460 @@
+Contextual Biasing ASR - Commit History Summary
+Generated at: 2026-07-11 12:37:44
+Scope: commits reachable from HEAD, oldest to newest.
+Changed files are summarized as: path | +added lines | -deleted lines.
+Binary files may show +-/-- when Git cannot compute line counts.
+====================================================================================================
+
+====================================================================================================
+Commit 1/9
+Hash: efd8ae2b9dbcf227e15d8cb11ebd84abf5f3e689
+Short hash: efd8ae2
+Author: 苏雨辰 <yuchensu72@gmail.com>
+Date: 2026-07-05 02:58:17 +0000
+Message: Initial commit
+
+[Changed files: path | +added | -deleted]
+README.md | +92 | -0
+
+====================================================================================================
+Commit 2/9
+Hash: 176de9dfd0fcaf75598fde32cffeac05632a4550
+Short hash: 176de9d
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-05 17:14:35 +0800
+Message: finish structure
+
+[Changed files: path | +added | -deleted]
+README.md | +4 | -0
+
+====================================================================================================
+Commit 3/9
+Hash: 008a59d6c90484d473e4ac9762b82c32ee1ca653
+Short hash: 008a59d
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-06 00:40:03 +0800
+Message: prepare basic speech data，ready for training
+
+[Changed files: path | +added | -deleted]
+.gitignore | +150 | -0
+configs/kokoro_tts.yaml | +39 | -0
+data/manifests/kokoro_generation_meta.json | +265 | -0
+data/manifests/kokoro_voice_split.json | +115 | -0
+data/manifests/test_tts.jsonl | +532 | -0
+data/manifests/train_tts.jsonl | +2660 | -0
+data/manifests/valid_tts.jsonl | +532 | -0
+data/stations/tianjin_metro_stations.csv | +242 | -0
+outputs/data_checks/kokoro_tts_bad_cases.csv | +1 | -0
+outputs/data_checks/kokoro_tts_check_report.json | +18 | -0
+scripts/check_tts_dataset.py | +194 | -0
+scripts/generate_kokoro_tts_dataset.py | +33 | -0
+scripts/test_station_lexicon.py | +53 | -0
+src/data/__init__.py | +1 | -0
+src/data/station_lexicon.py | +262 | -0
+src/data/station_text.py | +199 | -0
+src/tts/__init__.py | +1 | -0
+src/tts/audio_postprocess.py | +99 | -0
+src/tts/generate_kokoro_tts.py | +437 | -0
+src/tts/kokoro_voice.py | +200 | -0
+
+====================================================================================================
+Commit 4/9
+Hash: b3a427fadeab6e0f669cd647d666aa3a31236ac1
+Short hash: b3a427f
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-07 17:18:56 +0800
+Message: finish baseline test，results recorded
+
+[Changed files: path | +added | -deleted]
+.gitignore | +5 | -0
+baselines/README.md | +134 | -0
+baselines/run_whisper_raw.py | +359 | -0
+baselines/run_whisper_station_baselines.py | +552 | -0
+configs/kokoro_tts.yaml | +8 | -1
+configs/whisper_raw.yaml | +13 | -0
+configs/whisper_station_baselines.yaml | +17 | -0
+data/manifests/kokoro_generation_meta.json | +3 | -245
+data/manifests/test_tts.jsonl | +532 | -532
+data/manifests/train_tts.jsonl | +2660 | -2660
+data/manifests/valid_tts.jsonl | +532 | -532
+outputs/baseline/whisper_station_baselines/baseline0_whisper_raw.jsonl | +532 | -0
+outputs/baseline/whisper_station_baselines/baseline1_exact_match.jsonl | +532 | -0
+outputs/baseline/whisper_station_baselines/baseline2_edit_fuzzy.jsonl | +532 | -0
+outputs/baseline/whisper_station_baselines/baseline3_pinyin_fuzzy.jsonl | +532 | -0
+outputs/baseline/whisper_station_baselines/baseline4_lexicon_normalization.jsonl | +532 | -0
+outputs/baseline/whisper_station_baselines/errors.jsonl | +0 | -0
+outputs/baseline/whisper_station_baselines/summary.json | +61 | -0
+outputs/data_checks/kokoro_tts_check_report.json | +1 | -1
+scripts/generate_kokoro_tts_dataset.py | +6 | -0
+scripts/regenerate_null_freeform_tts.py | +145 | -0
+scripts/test_station_pause_tts.py | +109 | -0
+src/data/station_text.py | +28 | -4
+src/tts/generate_kokoro_tts.py | +153 | -23
+src/tts/kokoro_voice.py | +96 | -2
+
+====================================================================================================
+Commit 5/9
+Hash: 07d7420cc68b702906bfdb727b21916d3ca8a944
+Short hash: 07d7420
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-07 22:39:44 +0800
+Message: finish training stage 1： method efficient ，clear to move on
+
+[Changed files: path | +added | -deleted]
+.gitignore | +7 | -0
+configs/stage1_align.yaml | +37 | -0
+outputs/stage1_align/best.pt | +- | --
+outputs/stage1_align/train_log.jsonl | +34 | -0
+scripts/test_stage1_forward.py | +75 | -0
+scripts/train_stage1_align.py | +15 | -0
+src/data/audio_dataset.py | +93 | -0
+src/data/collator.py | +86 | -0
+src/data/prompts.py | +25 | -0
+src/models/__init__.py | +1 | -0
+src/models/audio_qwen.py | +144 | -0
+src/models/speech_adapter.py | +54 | -0
+src/models/whisper_encoder.py | +38 | -0
+src/training/__init__.py | +1 | -0
+src/training/train_stage1.py | +278 | -0
+
+====================================================================================================
+Commit 6/9
+Hash: a9e5997d2386296b0d1e5ae93ba8d12f1ce6c386
+Short hash: a9e5997
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-08 14:11:23 +0800
+Message: feat: 完善 .gitignore 并添加 Stage 2 训练与推理相关代码
+
+[Changed files: path | +added | -deleted]
+.gitignore | +6 | -1
+configs/stage2_bias.yaml | +56 | -0
+configs/stage2_no_hotwords.yaml | +56 | -0
+outputs/preds/stage2_hotwords_test_best333.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_test_best333_bad_cases.csv | +558 | -0
+outputs/preds/stage2_hotwords_test_best333_confusion_errors.csv | +459 | -0
+outputs/preds/stage2_hotwords_test_best333_error_analysis.json | +124 | -0
+outputs/preds/stage2_hotwords_test_best333_metrics.json | +26 | -0
+outputs/stage2_bias_hotwords/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords/best/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords/train_log.jsonl | +11 | -0
+outputs/stage2_bias_hotwords_formal/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_formal/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_formal/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_formal/best/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_formal/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000200/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000200/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000200/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000200/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000300/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000300/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000300/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000300/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000333/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000333/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000333/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_formal/best_step_000333/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_formal/train_log.jsonl | +37 | -0
+scripts/infer_manifest.py | +199 | -0
+scripts/test_stage2_forward.py | +89 | -0
+scripts/train_stage2_bias.py | +16 | -0
+src/data/collator.py | +77 | -2
+src/data/prompts.py | +65 | -1
+src/models/audio_qwen.py | +196 | -0
+src/models/lora_utils.py | +77 | -0
+src/training/train_stage2.py | +376 | -0
+
+====================================================================================================
+Commit 7/9
+Hash: 30fa20b98faedc8b5b7f6a418161b4fbb34a97a1
+Short hash: 30fa20b
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-09 09:26:16 +0800
+Message: find best models
+
+[Changed files: path | +added | -deleted]
+.gitignore | +3 | -105
+configs/stage1_align_attention.yaml | +37 | -0
+configs/stage2_bias_attention.yaml | +56 | -0
+configs/stage2_bias_attention_hard_refine.yaml | +57 | -0
+configs/stage2_bias_attention_nullboost.yaml | +57 | -0
+configs/stage2_bias_attention_nullboost8.yaml | +57 | -0
+configs/stage2_bias_fixed.yaml | +56 | -0
+data/manifests/hard_station_refine.jsonl | +1656 | -0
+outputs/baseline/whisper_raw_smoke_errors.jsonl | +0 | -0
+outputs/baseline/whisper_raw_smoke_errors_v2.jsonl | +0 | -0
+outputs/baseline/whisper_raw_smoke_predictions.jsonl | +1 | -0
+outputs/baseline/whisper_raw_smoke_predictions_v2.jsonl | +1 | -0
+outputs/baseline/whisper_station_baselines_smoke/baseline0_whisper_raw.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke/baseline1_exact_match.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke/baseline2_edit_fuzzy.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke/baseline3_pinyin_fuzzy.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke/baseline4_lexicon_normalization.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke/errors.jsonl | +0 | -0
+outputs/baseline/whisper_station_baselines_smoke/summary.json | +61 | -0
+outputs/baseline/whisper_station_baselines_smoke2/baseline0_whisper_raw.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke2/baseline1_exact_match.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke2/baseline2_edit_fuzzy.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke2/baseline3_pinyin_fuzzy.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke2/baseline4_lexicon_normalization.jsonl | +3 | -0
+outputs/baseline/whisper_station_baselines_smoke2/errors.jsonl | +0 | -0
+outputs/baseline/whisper_station_baselines_smoke2/summary.json | +61 | -0
+outputs/preds/stage2_hotwords_attention_q32_hard_refine_test_best.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_attention_q32_hard_refine_test_best_errors.csv | +9 | -0
+outputs/preds/stage2_hotwords_attention_q32_hard_refine_test_best_metrics.json | +111 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_round2_test_best.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_round2_test_best_errors.csv | +33 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_round2_test_best_metrics.json | +111 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_test_best.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_test_best_errors.csv | +33 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost8_test_best_metrics.json | +111 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost_test_best300.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost_test_best300_errors.csv | +57 | -0
+outputs/preds/stage2_hotwords_attention_q32_nullboost_test_best300_metrics.json | +111 | -0
+outputs/preds/stage2_hotwords_attention_q32_test_best400.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_attention_q32_test_best400_errors.csv | +167 | -0
+outputs/preds/stage2_hotwords_attention_q32_test_best400_metrics.json | +111 | -0
+outputs/preds/stage2_hotwords_fixed_prompt_test_best1300.jsonl | +532 | -0
+outputs/preds/stage2_hotwords_fixed_prompt_test_best1300_errors.csv | +526 | -0
+outputs/preds/stage2_hotwords_fixed_prompt_test_best1300_metrics.json | +230 | -0
+outputs/stage1_align_attention_q32/best.pt | +- | --
+outputs/stage1_align_attention_q32/train_log.jsonl | +73 | -0
+outputs/stage2_bias_hotwords/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32/best/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000200/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000300/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32/best_step_000400/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_attention_q32/train_log.jsonl | +24 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best/training_config.yaml | +52 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_attention_q32_hard_refine/train_log.jsonl | +4 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best/training_config.yaml | +52 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000200/training_config.yaml | +52 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/best_step_000300/training_config.yaml | +52 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost/train_log.jsonl | +18 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best/training_config.yaml | +52 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_attention_q32_nullboost8/train_log.jsonl | +6 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_checkpoint_dir.txt | +1 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000200/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000300/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000400/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000500/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000600/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000700/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000800/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_000900/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001000/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001100/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001200/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/lora_adapter/README.md | +207 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/lora_adapter/adapter_config.json | +48 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/prompt_config.json | +7 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300/training_config.yaml | +51 | -0
+outputs/stage2_bias_hotwords_fixed_prompt/train_log.jsonl | +80 | -0
+outputs/stage2_bias_hotwords_formal/best/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_formal/best/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000200/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000200/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000300/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000300/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000333/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_formal/best_step_000333/lora_adapter/adapter_model.safetensors | +- | --
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/adapter_projector.pt | +- | --
+outputs/stage2_bias_hotwords_formal/best_tmp_000100/lora_adapter/adapter_model.safetensors | +- | --
+src/data/audio_dataset.py | +12 | -9
+src/data/collator.py | +25 | -4
+src/data/prompts.py | +19 | -18
+src/models/audio_qwen.py | +7 | -1
+src/models/speech_adapter.py | +70 | -8
+src/training/train_stage2.py | +1 | -0
+temp/station_pause_tts_test/manifest.jsonl | +4 | -0
+temp/station_pause_tts_test/processed/TJ043_test.wav | +- | --
+temp/station_pause_tts_test/processed/TJ231_test.wav | +- | --
+temp/station_pause_tts_test/processed/TJ240_test.wav | +- | --
+temp/station_pause_tts_test/processed/TJ241_test.wav | +- | --
+temp/station_pause_tts_test/raw/TJ043_test.wav | +- | --
+temp/station_pause_tts_test/raw/TJ231_test.wav | +- | --
+temp/station_pause_tts_test/raw/TJ240_test.wav | +- | --
+temp/station_pause_tts_test/raw/TJ241_test.wav | +- | --
+tmp_lushuidao_tts/generate_lushuidao_edge_tts.py | +60 | -0
+tmp_lushuidao_tts/manifest_lushuidao_14.csv | +15 | -0
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_test_0001.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_test_0002.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0001.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0002.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0003.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0004.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0005.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0006.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0007.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0008.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0009.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_train_0010.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_valid_0001.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_mp3/TJ014_tts_valid_0002.mp3 | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_test_0001.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_test_0002.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0001.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0002.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0003.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0004.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0005.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0006.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0007.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0008.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0009.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_train_0010.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_valid_0001.wav | +- | --
+tmp_lushuidao_tts/out_lushuidao_edge_wav/TJ014_tts_valid_0002.wav | +- | --
+
+====================================================================================================
+Commit 8/9
+Hash: 98d026bd3809ca377a03f63112e4430a180480ee
+Short hash: 98d026b
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-10 22:15:37 +0800
+Message: complete single wav infering script ,now can work saparately
+
+[Changed files: path | +added | -deleted]
+.gitignore | +4 | -3
+EXPERIMENT_REPORT_SUMMARY.md | +336 | -0
+data/raw/README.md | +49 | -0
+outputs/report_figures/accuracy_bar_overall.pdf | +- | --
+outputs/report_figures/accuracy_bar_overall.png | +- | --
+outputs/report_figures/experiment_metrics_summary.json | +122 | -0
+outputs/report_figures/experiment_metrics_table.csv | +7 | -0
+outputs/report_figures/experiment_metrics_table.md | +8 | -0
+pretrained/ReadMe.md | +5 | -0
+real_people_test/inpt/lltest.wav | +- | --
+real_people_test/inpt/lsdtest.wav | +- | --
+real_people_test/real_people_test.py | +175 | -0
+scripts/plot_experiment_results.py | +295 | -0
+
+====================================================================================================
+Commit 9/9
+Hash: 8443156fdd4cef0aec914e7b003c145e4ba79f53
+Short hash: 8443156
+Author: L1011super <su20050215@126.com>
+Date: 2026-07-10 22:58:07 +0800
+Message: finish readme
+
+[Changed files: path | +added | -deleted]
+README.md | +392 | -58

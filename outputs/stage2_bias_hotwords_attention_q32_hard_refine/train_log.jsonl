@@ -1,0 +1,4 @@
+{"type": "train", "step": 20, "epoch": 1, "loss": 0.044557366335016016, "lr": 9.492385786802032e-06, "cuda_memory_mb": 6599.99, "elapsed_sec": 158.81}
+{"type": "train", "step": 40, "epoch": 1, "loss": 0.024089786106083012, "lr": 8.477157360406092e-06, "cuda_memory_mb": 6599.99, "elapsed_sec": 316.58}
+{"type": "eval", "step": 50, "valid_loss": 0.0079600829689079}
+{"type": "train", "step": 60, "epoch": 1, "loss": 0.009852298861869713, "lr": 7.461928934010153e-06, "cuda_memory_mb": 6600.36, "elapsed_sec": 656.24}

@@ -1,0 +1,46 @@
+seed: 42
+paths:
+  station_csv: data/stations/tianjin_metro_stations.csv
+  output_root: data/raw/kokoro_tts
+  processed_root: data/processed/audio
+  manifest_dir: data/manifests
+  voice_dir: pretrained/Kokoro-82M-v1.1-zh/voices
+kokoro:
+  model_path: pretrained/Kokoro-82M-v1.1-zh
+  lang_code: z
+audio:
+  target_sample_rate: 16000
+generation:
+  version: kokoro_v2_station_pause
+  train_per_station: 10
+  valid_per_station: 2
+  test_per_station: 2
+  null_train: 250
+  null_valid: 50
+  null_test: 50
+  generate_null: true
+station_command:
+  pause_sec_min: 0.00
+  pause_sec_max: 0.00
+  thinking_filler_probability: 0.03
+  thinking_filler_pause_sec: 0.30
+  thinking_fillers: ["嗯", "那个", "呃"]
+voice_split:
+  train_ratio: 0.70
+  valid_ratio: 0.15
+  test_ratio: 0.15
+augmentation:
+  train_plan:
+    clean: 5
+    speed: 3
+    leading_silence: 1
+    light_noise: 1
+  valid_plan:
+    clean: 1
+    speed: 1
+  test_plan:
+    clean: 1
+    light_aug: 1
+  speed_values: [0.85, 0.90, 1.00, 1.10]
+  leading_silence_ms: [200, 500]
+  noise_snr_db: [20, 30]

@@ -1,0 +1,8 @@
+| method | overall_acc | station_acc | null_acc | rare_acc | confusion_acc | correct/total | errors | avg_decode_time_sec | note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B0 Whisper Raw | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 0.2076 | Whisper raw transcription only; no station prediction. |
+| B1 Exact Match | 23.87% | 17.22% | 88.00% | 8.82% | 17.05% | 127/532 | 405 | 0.2076 | Whisper ASR + exact station-name substring match. |
+| B2 Edit Fuzzy | 31.58% | 24.69% | 98.00% | 24.26% | 25.23% | 168/532 | 364 | 0.2076 | Whisper ASR + slot extraction + edit-distance fuzzy match. |
+| B3 Pinyin Fuzzy | 93.80% | 93.78% | 94.00% | 95.59% | 93.18% | 499/532 | 33 | 0.2076 | Whisper ASR + slot extraction + pinyin similarity. |
+| B4 Lexicon Norm | 93.80% | 93.78% | 94.00% | 95.59% | 93.18% | 499/532 | 33 | 0.2076 | Whisper ASR + station lexicon normalization. |
+| Ours Optimized | 98.50% | 99.38% | 90.00% | 97.79% | 99.32% | 524/532 | 8 | N/A | Whisper Encoder + Adapter + Qwen + hotword list + LoRA + hard-refine. |

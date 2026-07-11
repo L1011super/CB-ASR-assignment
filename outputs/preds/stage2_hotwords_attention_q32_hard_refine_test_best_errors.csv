@@ -1,0 +1,9 @@
+﻿utt_id,target_station,pred_station,raw_output,with_hotwords
+TJ226_tts_test_0001,东丽一经路,东丽三经路,"{""station"": ""东丽三经路""}",True
+TJ228_tts_test_0001,东丽六经路,东丽三经路,"{""station"": ""东丽三经路""}",True
+TJ228_tts_test_0002,东丽六经路,东丽三经路,"{""station"": ""东丽三经路""}",True
+NULL_tts_test_0023,,成林道,"{""station"": ""成林道""}",True
+NULL_tts_test_0026,,卞兴,"{""station"": ""卞兴""}",True
+NULL_tts_test_0034,,天津大学北洋园校区,"{""station"": ""天津大学北洋园校区""}",True
+NULL_tts_test_0039,,团泊健康城,"{""station"": ""团泊健康城""}",True
+NULL_tts_test_0041,,天津大学六里台,"{""station"": ""天津大学六里台""}",True

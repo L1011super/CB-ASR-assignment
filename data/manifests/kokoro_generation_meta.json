@@ -1,0 +1,23 @@
+{
+  "version": "kokoro_v2_station_pause",
+  "limit_stations": null,
+  "station_ids": [],
+  "station_count": 0,
+  "expected_per_station": {
+    "train": 10,
+    "valid": 2,
+    "test": 2
+  },
+  "expected_null_counts": {
+    "train": 250,
+    "valid": 50,
+    "test": 50
+  },
+  "voice_counts": {
+    "train": 70,
+    "valid": 15,
+    "test": 15
+  },
+  "model_dir": "ckpts\\kokoro-v1.1",
+  "voice_dir": "ckpts\\kokoro-v1.1\\voices"
+}

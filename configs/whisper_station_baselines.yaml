@@ -1,0 +1,17 @@
+model_path: pretrained/whisper-small
+station_csv: data/stations/tianjin_metro_stations.csv
+manifest: data/manifests/test_tts.jsonl
+output_dir: outputs/baseline/whisper_station_baselines
+error_output: outputs/baseline/whisper_station_baselines/errors.jsonl
+language: zh
+task: transcribe
+device: cuda:0
+max_new_tokens: 64
+num_beams: 1
+do_sample: false
+fp16: true
+resume: true
+limit: null
+edit_threshold: 75.0
+pinyin_threshold: 82.0
+lexicon_threshold: 82.0

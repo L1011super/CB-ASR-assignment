@@ -1,0 +1,69 @@
+﻿# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*.class
+*.pyo
+*.pyd
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-meta/
+
+# =========================
+# IDE / OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 如果后续想提交推荐 VSCode 配置，可以手动取消下面两行注释
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# =========================
+# Local pretrained model bodies
+# =========================
+pretrained/Qwen2.5-1.5B-Instruct/
+pretrained/whisper-small/
+ckpts/kokoro-v1.1/
+*.pt
+*.pth
+*.safetensors
+
+# Hugging Face / ModelScope cache
+.cache/
+huggingface/
+modelscope/
+.huggingface/
+.modelscope/
+
+# =========================
+# Raw, processed, and external audio/data corpora
+# =========================
+data/raw/kokoro_tts/
+data/processed/
+data/external/aishell_mini/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/

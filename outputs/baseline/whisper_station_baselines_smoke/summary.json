@@ -1,0 +1,61 @@
+{
+  "total_manifest_rows": 3,
+  "asr_success": 3,
+  "asr_errors": 0,
+  "total_decode_time_sec": 1.0353,
+  "avg_decode_time_sec": 0.3451,
+  "baselines": {
+    "whisper_raw": {
+      "note": "raw ASR text only; no station prediction"
+    },
+    "whisper_exact_match": {
+      "total": 3,
+      "correct": 0,
+      "accuracy": 0.0,
+      "station_total": 3,
+      "station_correct": 0,
+      "station_accuracy": 0.0,
+      "null_total": 0,
+      "null_correct": 0,
+      "null_accuracy": 0.0
+    },
+    "whisper_edit_fuzzy": {
+      "total": 3,
+      "correct": 1,
+      "accuracy": 0.333333,
+      "station_total": 3,
+      "station_correct": 1,
+      "station_accuracy": 0.333333,
+      "null_total": 0,
+      "null_correct": 0,
+      "null_accuracy": 0.0
+    },
+    "whisper_pinyin_fuzzy": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "station_total": 3,
+      "station_correct": 3,
+      "station_accuracy": 1.0,
+      "null_total": 0,
+      "null_correct": 0,
+      "null_accuracy": 0.0
+    },
+    "whisper_lexicon_normalization": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "station_total": 3,
+      "station_correct": 3,
+      "station_accuracy": 1.0,
+      "null_total": 0,
+      "null_correct": 0,
+      "null_accuracy": 0.0
+    }
+  },
+  "skipped_by_resume": 0,
+  "device": "cuda:0",
+  "dtype": "torch.float16",
+  "output_dir": "D:/苏雨辰/大三下/语音信息/labFinal/implementation/contextual-biasing-asr/outputs/baseline/whisper_station_baselines_smoke",
+  "error_output": "D:/苏雨辰/大三下/语音信息/labFinal/implementation/contextual-biasing-asr/outputs/baseline/whisper_station_baselines_smoke/errors.jsonl"
+}

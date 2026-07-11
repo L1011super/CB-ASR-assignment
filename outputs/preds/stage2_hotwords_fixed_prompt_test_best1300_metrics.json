@@ -1,0 +1,230 @@
+{
+  "prediction_file": "D:/苏雨辰/大三下/语音信息/labFinal/implementation/contextual-biasing-asr/outputs/preds/stage2_hotwords_fixed_prompt_test_best1300.jsonl",
+  "checkpoint": "outputs/stage2_bias_hotwords_fixed_prompt/best_step_001300",
+  "total": 532,
+  "overall_correct": 7,
+  "overall_accuracy": 0.013157894736842105,
+  "station_total": 482,
+  "station_correct": 7,
+  "station_accuracy": 0.014522821576763486,
+  "null_total": 50,
+  "null_correct": 0,
+  "null_accuracy": 0.0,
+  "confusion_station_total": 440,
+  "confusion_station_correct": 7,
+  "confusion_station_accuracy": 0.015909090909090907,
+  "rare_station_total": 136,
+  "rare_station_correct": 2,
+  "rare_station_accuracy": 0.014705882352941176,
+  "num_errors": 525,
+  "top_pred_stations": [
+    [
+      "北塘",
+      108
+    ],
+    [
+      "东丽一经路",
+      89
+    ],
+    [
+      "东丽六经路",
+      67
+    ],
+    [
+      "天津大学北洋园校区",
+      66
+    ],
+    [
+      "南仓",
+      62
+    ],
+    [
+      "东丽文体中心",
+      48
+    ],
+    [
+      "南开大学八里台",
+      42
+    ],
+    [
+      "北辰道",
+      20
+    ],
+    [
+      "北站",
+      16
+    ],
+    [
+      "南珠桥",
+      5
+    ],
+    [
+      "天津宾馆",
+      5
+    ],
+    [
+      "水上公园西路",
+      2
+    ],
+    [
+      "东丽开发区",
+      1
+    ],
+    [
+      "北仓",
+      1
+    ]
+  ],
+  "top_error_pairs": [
+    {
+      "target": "None",
+      "pred": "北塘",
+      "count": 12
+    },
+    {
+      "target": "None",
+      "pred": "南仓",
+      "count": 9
+    },
+    {
+      "target": "None",
+      "pred": "南开大学八里台",
+      "count": 8
+    },
+    {
+      "target": "None",
+      "pred": "天津大学北洋园校区",
+      "count": 7
+    },
+    {
+      "target": "None",
+      "pred": "东丽文体中心",
+      "count": 6
+    },
+    {
+      "target": "None",
+      "pred": "东丽六经路",
+      "count": 4
+    },
+    {
+      "target": "None",
+      "pred": "东丽一经路",
+      "count": 3
+    },
+    {
+      "target": "下瓦房",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "土城",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "双林",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "李楼",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "国瑞路",
+      "pred": "南仓",
+      "count": 2
+    },
+    {
+      "target": "曹庄",
+      "pred": "北站",
+      "count": 2
+    },
+    {
+      "target": "卞兴",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "咸阳路",
+      "pred": "东丽一经路",
+      "count": 2
+    },
+    {
+      "target": "鼓楼",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "建国道意风区",
+      "pred": "天津大学北洋园校区",
+      "count": 2
+    },
+    {
+      "target": "天津站",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "远洋国际中心",
+      "pred": "天津大学北洋园校区",
+      "count": 2
+    },
+    {
+      "target": "翠阜新村",
+      "pred": "东丽文体中心",
+      "count": 2
+    },
+    {
+      "target": "空港经济区",
+      "pred": "天津大学北洋园校区",
+      "count": 2
+    },
+    {
+      "target": "学府工业区",
+      "pred": "天津大学北洋园校区",
+      "count": 2
+    },
+    {
+      "target": "大学城",
+      "pred": "东丽一经路",
+      "count": 2
+    },
+    {
+      "target": "华苑",
+      "pred": "北塘",
+      "count": 2
+    },
+    {
+      "target": "西康路",
+      "pred": "南仓",
+      "count": 2
+    },
+    {
+      "target": "中山路",
+      "pred": "东丽一经路",
+      "count": 2
+    },
+    {
+      "target": "宜兴埠",
+      "pred": "东丽一经路",
+      "count": 2
+    },
+    {
+      "target": "天士力",
+      "pred": "东丽一经路",
+      "count": 2
+    },
+    {
+      "target": "丰产河",
+      "pred": "南开大学八里台",
+      "count": 2
+    },
+    {
+      "target": "小街",
+      "pred": "北塘",
+      "count": 2
+    }
+  ]
+}

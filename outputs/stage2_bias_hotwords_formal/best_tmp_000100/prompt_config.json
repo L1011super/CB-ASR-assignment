@@ -1,0 +1,7 @@
+{
+  "with_hotwords": true,
+  "use_full_station_list": false,
+  "num_distractors": 80,
+  "step": 100,
+  "valid_loss": 0.7124345495288533
+}

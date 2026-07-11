@@ -1,0 +1,52 @@
+seed: 42
+paths:
+  train_manifest: data/manifests/train_tts.jsonl
+  valid_manifest: data/manifests/valid_tts.jsonl
+  station_csv: data/stations/tianjin_metro_stations.csv
+  whisper_model: pretrained/whisper-small
+  qwen_model: pretrained/Qwen2.5-1.5B-Instruct
+  stage1_checkpoint: outputs/stage1_align_attention_q32/best.pt
+  output_dir: outputs/stage2_bias_hotwords_attention_q32_nullboost8
+data:
+  use_null_samples: true
+  null_oversample_factor: 8
+  with_hotwords: true
+  use_full_station_list: true
+  num_distractors: null
+  target_sample_rate: 16000
+  max_prompt_length: 1536
+  max_answer_length: 32
+  num_workers: 0
+model:
+  adapter_type: attention_pool_mlp
+  num_query_tokens: 32
+  adapter_hidden_size: 1024
+  adapter_dropout: 0.05
+  freeze_whisper: true
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+training:
+  device: cuda:0
+  epochs: 2
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 2.0e-05
+  weight_decay: 0.01
+  warmup_steps: 20
+  max_grad_norm: 1.0
+  fp16: true
+  gradient_checkpointing: true
+  log_steps: 20
+  eval_steps: 100
+  save_best: true

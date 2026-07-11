@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "bad_case_count": 0,
+  "split_counts": {
+    "train": 2660,
+    "valid": 532,
+    "test": 532
+  },
+  "station_count_checked": 241,
+  "null_counts": {
+    "train": 250,
+    "valid": 50,
+    "test": 50
+  },
+  "total_duration_sec": 12495.7,
+  "manifest_dir": "data\\manifests",
+  "target_sample_rate": 16000
+}

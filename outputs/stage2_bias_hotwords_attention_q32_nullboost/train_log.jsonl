@@ -1,0 +1,18 @@
+{"type": "train", "step": 20, "epoch": 1, "loss": 0.09031242419150658, "lr": 3.3333333333333335e-05, "cuda_memory_mb": 6599.07, "elapsed_sec": 162.08}
+{"type": "train", "step": 40, "epoch": 1, "loss": 0.10837441718522314, "lr": 4.959967974379504e-05, "cuda_memory_mb": 6599.07, "elapsed_sec": 324.71}
+{"type": "train", "step": 60, "epoch": 1, "loss": 0.09569199019151711, "lr": 4.879903923138511e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 488.1}
+{"type": "train", "step": 80, "epoch": 1, "loss": 0.07798614218563671, "lr": 4.7998398718975185e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 651.95}
+{"type": "train", "step": 100, "epoch": 1, "loss": 0.06731856443793731, "lr": 4.7197758206565256e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 816.88}
+{"type": "eval", "step": 100, "valid_loss": 0.060021034054976975}
+{"type": "train", "step": 120, "epoch": 1, "loss": 0.05445067253331217, "lr": 4.639711769415533e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 1177.2}
+{"type": "train", "step": 140, "epoch": 1, "loss": 0.061384864117326285, "lr": 4.55964771817454e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 1342.96}
+{"type": "train", "step": 160, "epoch": 1, "loss": 0.06323832550469888, "lr": 4.479583666933547e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 1508.69}
+{"type": "train", "step": 180, "epoch": 1, "loss": 0.06433733905760164, "lr": 4.399519615692554e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 1673.65}
+{"type": "train", "step": 200, "epoch": 1, "loss": 0.057824722067834955, "lr": 4.3194555644515615e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 1835.04}
+{"type": "eval", "step": 200, "valid_loss": 0.04847711627206122}
+{"type": "train", "step": 220, "epoch": 1, "loss": 0.04279038731342553, "lr": 4.2393915132105686e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 2181.86}
+{"type": "train", "step": 240, "epoch": 1, "loss": 0.03944866231045126, "lr": 4.159327461969576e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 2344.64}
+{"type": "train", "step": 260, "epoch": 1, "loss": 0.038190090186526506, "lr": 4.079263410728583e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 2509.43}
+{"type": "train", "step": 280, "epoch": 1, "loss": 0.04632464968967724, "lr": 3.99919935948759e-05, "cuda_memory_mb": 6599.45, "elapsed_sec": 2674.27}
+{"type": "train", "step": 300, "epoch": 1, "loss": 0.0338998228521632, "lr": 3.919135308246597e-05, "cuda_memory_mb": 6599.67, "elapsed_sec": 3014.22}
+{"type": "eval", "step": 300, "valid_loss": 0.03587829733064575}
